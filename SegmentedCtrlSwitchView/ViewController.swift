@@ -11,31 +11,25 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var viewContainer: UIView!
-    
-    var simpleView1: UIView!
-    var simpleView2: UIView!
+   
+    var views:  [UIView]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        simpleView1 = SimpleVC1().view
-        simpleView2 = SimpleVC2().view
-        viewContainer.addSubview(simpleView2)
-        viewContainer.addSubview(simpleView1)
+        views = [UIView]()
+        views.append(SimpleVC1().view)
+        views.append(SimpleVC2().view)
+        
+        for v in views {
+            viewContainer.addSubview(v)
+        }
+        
+        viewContainer.bringSubviewToFront(views[0])
     }
 
     @IBAction func switchViewAction(_ sender: UISegmentedControl) {
-        
-        switch sender.selectedSegmentIndex {
-        case 0:
-            viewContainer.bringSubviewToFront(simpleView1)
-            break
-        case 1:
-            viewContainer.bringSubviewToFront(simpleView2)
-            break
-        default:
-            break
-        }
+        self.viewContainer.bringSubviewToFront(views[sender.selectedSegmentIndex])
     }
     
 }
