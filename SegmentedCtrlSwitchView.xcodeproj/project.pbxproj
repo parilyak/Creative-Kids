@@ -15,6 +15,10 @@
 		362EB7D02455E0C30067F0AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 362EB7CE2455E0C30067F0AB /* LaunchScreen.storyboard */; };
 		362EB7DB2455E0C30067F0AB /* SegmentedCtrlSwitchViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362EB7DA2455E0C30067F0AB /* SegmentedCtrlSwitchViewTests.swift */; };
 		362EB7E62455E0C30067F0AB /* SegmentedCtrlSwitchViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362EB7E52455E0C30067F0AB /* SegmentedCtrlSwitchViewUITests.swift */; };
+		362EB7F62455E25F0067F0AB /* SimpleVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362EB7F42455E25F0067F0AB /* SimpleVC1.swift */; };
+		362EB7F72455E25F0067F0AB /* SimpleVC1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 362EB7F52455E25F0067F0AB /* SimpleVC1.xib */; };
+		362EB7FA2455E2750067F0AB /* SimpleVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362EB7F82455E2750067F0AB /* SimpleVC2.swift */; };
+		362EB7FB2455E2750067F0AB /* SimpleVC2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 362EB7F92455E2750067F0AB /* SimpleVC2.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		362EB7E12455E0C30067F0AB /* SegmentedCtrlSwitchViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SegmentedCtrlSwitchViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		362EB7E52455E0C30067F0AB /* SegmentedCtrlSwitchViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedCtrlSwitchViewUITests.swift; sourceTree = "<group>"; };
 		362EB7E72455E0C30067F0AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		362EB7F42455E25F0067F0AB /* SimpleVC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleVC1.swift; sourceTree = "<group>"; };
+		362EB7F52455E25F0067F0AB /* SimpleVC1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleVC1.xib; sourceTree = "<group>"; };
+		362EB7F82455E2750067F0AB /* SimpleVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleVC2.swift; sourceTree = "<group>"; };
+		362EB7F92455E2750067F0AB /* SimpleVC2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleVC2.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,7 @@
 		362EB7C22455E0C10067F0AB /* SegmentedCtrlSwitchView */ = {
 			isa = PBXGroup;
 			children = (
+				362EB7F32455E2280067F0AB /* SimpleVC */,
 				362EB7C32455E0C10067F0AB /* AppDelegate.swift */,
 				362EB7C52455E0C10067F0AB /* SceneDelegate.swift */,
 				362EB7C72455E0C10067F0AB /* ViewController.swift */,
@@ -126,6 +135,17 @@
 				362EB7E72455E0C30067F0AB /* Info.plist */,
 			);
 			path = SegmentedCtrlSwitchViewUITests;
+			sourceTree = "<group>";
+		};
+		362EB7F32455E2280067F0AB /* SimpleVC */ = {
+			isa = PBXGroup;
+			children = (
+				362EB7F42455E25F0067F0AB /* SimpleVC1.swift */,
+				362EB7F52455E25F0067F0AB /* SimpleVC1.xib */,
+				362EB7F82455E2750067F0AB /* SimpleVC2.swift */,
+				362EB7F92455E2750067F0AB /* SimpleVC2.xib */,
+			);
+			path = SimpleVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +254,8 @@
 			files = (
 				362EB7D02455E0C30067F0AB /* LaunchScreen.storyboard in Resources */,
 				362EB7CD2455E0C30067F0AB /* Assets.xcassets in Resources */,
+				362EB7FB2455E2750067F0AB /* SimpleVC2.xib in Resources */,
+				362EB7F72455E25F0067F0AB /* SimpleVC1.xib in Resources */,
 				362EB7CB2455E0C10067F0AB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +283,8 @@
 			files = (
 				362EB7C82455E0C10067F0AB /* ViewController.swift in Sources */,
 				362EB7C42455E0C10067F0AB /* AppDelegate.swift in Sources */,
+				362EB7FA2455E2750067F0AB /* SimpleVC2.swift in Sources */,
+				362EB7F62455E25F0067F0AB /* SimpleVC1.swift in Sources */,
 				362EB7C62455E0C10067F0AB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,7 +390,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +444,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

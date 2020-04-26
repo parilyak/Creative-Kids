@@ -15,11 +15,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p3C-0m-S3y">
+                                <rect key="frame" x="0.0" y="159" width="414" height="737"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Hj7-dr-xZM">
-                                <rect key="frame" x="142" y="107" width="130" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="CZl-Tn-eWl"/>
-                                </constraints>
+                                <rect key="frame" x="92" y="108" width="230" height="32"/>
                                 <segments>
                                     <segment title="First"/>
                                     <segment title="Second"/>
@@ -28,20 +29,16 @@
                                     <action selector="switchViewAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="1VZ-uZ-Htj"/>
                                 </connections>
                             </segmentedControl>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p3C-0m-S3y">
-                                <rect key="frame" x="0.0" y="158" width="414" height="738"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="p3C-0m-S3y" firstAttribute="top" secondItem="Hj7-dr-xZM" secondAttribute="bottom" constant="20" id="62K-S5-biG"/>
+                            <constraint firstItem="Hj7-dr-xZM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="LP7-9P-SdL"/>
                             <constraint firstItem="p3C-0m-S3y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MRC-ZN-Cqm"/>
                             <constraint firstAttribute="bottomMargin" secondItem="p3C-0m-S3y" secondAttribute="bottom" constant="-34" id="TIr-Dm-Ve0"/>
-                            <constraint firstItem="Hj7-dr-xZM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="142" id="XcE-Sd-po8"/>
-                            <constraint firstItem="Hj7-dr-xZM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gZn-V8-B8G"/>
-                            <constraint firstItem="Hj7-dr-xZM" firstAttribute="centerX" secondItem="p3C-0m-S3y" secondAttribute="centerX" id="gr5-xp-X3B"/>
-                            <constraint firstItem="Hj7-dr-xZM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="nBC-7m-2Et"/>
-                            <constraint firstItem="p3C-0m-S3y" firstAttribute="top" secondItem="Hj7-dr-xZM" secondAttribute="bottom" constant="21" id="uej-sX-epR"/>
+                            <constraint firstItem="Hj7-dr-xZM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fIy-t9-C2M"/>
+                            <constraint firstItem="Hj7-dr-xZM" firstAttribute="centerX" secondItem="p3C-0m-S3y" secondAttribute="centerX" id="kUy-aD-bS1"/>
+                            <constraint firstItem="Hj7-dr-xZM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="92" id="rvD-5L-jSL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
