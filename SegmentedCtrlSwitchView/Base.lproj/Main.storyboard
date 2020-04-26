@@ -20,10 +20,11 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Hj7-dr-xZM">
-                                <rect key="frame" x="92" y="108" width="230" height="32"/>
+                                <rect key="frame" x="51" y="108" width="312" height="32"/>
                                 <segments>
                                     <segment title="First"/>
                                     <segment title="Second"/>
+                                    <segment title="Third"/>
                                 </segments>
                                 <connections>
                                     <action selector="switchViewAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="1VZ-uZ-Htj"/>
@@ -38,7 +39,7 @@
                             <constraint firstAttribute="bottomMargin" secondItem="p3C-0m-S3y" secondAttribute="bottom" constant="-34" id="TIr-Dm-Ve0"/>
                             <constraint firstItem="Hj7-dr-xZM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fIy-t9-C2M"/>
                             <constraint firstItem="Hj7-dr-xZM" firstAttribute="centerX" secondItem="p3C-0m-S3y" secondAttribute="centerX" id="kUy-aD-bS1"/>
-                            <constraint firstItem="Hj7-dr-xZM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="92" id="rvD-5L-jSL"/>
+                            <constraint firstItem="Hj7-dr-xZM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="51" id="rvD-5L-jSL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

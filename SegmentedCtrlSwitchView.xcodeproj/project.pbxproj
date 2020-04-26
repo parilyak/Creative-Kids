@@ -19,6 +19,8 @@
 		362EB7F72455E25F0067F0AB /* SimpleVC1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 362EB7F52455E25F0067F0AB /* SimpleVC1.xib */; };
 		362EB7FA2455E2750067F0AB /* SimpleVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362EB7F82455E2750067F0AB /* SimpleVC2.swift */; };
 		362EB7FB2455E2750067F0AB /* SimpleVC2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 362EB7F92455E2750067F0AB /* SimpleVC2.xib */; };
+		362EB7FE2455E7B60067F0AB /* SimpleVC3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362EB7FC2455E7B60067F0AB /* SimpleVC3.swift */; };
+		362EB7FF2455E7B60067F0AB /* SimpleVC3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 362EB7FD2455E7B60067F0AB /* SimpleVC3.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		362EB7F52455E25F0067F0AB /* SimpleVC1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleVC1.xib; sourceTree = "<group>"; };
 		362EB7F82455E2750067F0AB /* SimpleVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleVC2.swift; sourceTree = "<group>"; };
 		362EB7F92455E2750067F0AB /* SimpleVC2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleVC2.xib; sourceTree = "<group>"; };
+		362EB7FC2455E7B60067F0AB /* SimpleVC3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleVC3.swift; sourceTree = "<group>"; };
+		362EB7FD2455E7B60067F0AB /* SimpleVC3.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleVC3.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +148,8 @@
 				362EB7F52455E25F0067F0AB /* SimpleVC1.xib */,
 				362EB7F82455E2750067F0AB /* SimpleVC2.swift */,
 				362EB7F92455E2750067F0AB /* SimpleVC2.xib */,
+				362EB7FC2455E7B60067F0AB /* SimpleVC3.swift */,
+				362EB7FD2455E7B60067F0AB /* SimpleVC3.xib */,
 			);
 			path = SimpleVC;
 			sourceTree = "<group>";
@@ -254,6 +260,7 @@
 			files = (
 				362EB7D02455E0C30067F0AB /* LaunchScreen.storyboard in Resources */,
 				362EB7CD2455E0C30067F0AB /* Assets.xcassets in Resources */,
+				362EB7FF2455E7B60067F0AB /* SimpleVC3.xib in Resources */,
 				362EB7FB2455E2750067F0AB /* SimpleVC2.xib in Resources */,
 				362EB7F72455E25F0067F0AB /* SimpleVC1.xib in Resources */,
 				362EB7CB2455E0C10067F0AB /* Main.storyboard in Resources */,
@@ -285,6 +292,7 @@
 				362EB7C42455E0C10067F0AB /* AppDelegate.swift in Sources */,
 				362EB7FA2455E2750067F0AB /* SimpleVC2.swift in Sources */,
 				362EB7F62455E25F0067F0AB /* SimpleVC1.swift in Sources */,
+				362EB7FE2455E7B60067F0AB /* SimpleVC3.swift in Sources */,
 				362EB7C62455E0C10067F0AB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

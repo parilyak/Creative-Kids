@@ -20,6 +20,7 @@ class ViewController: UIViewController {
         views = [UIView]()
         views.append(SimpleVC1().view)
         views.append(SimpleVC2().view)
+        views.append(SimpleVC3().view)
         
         for v in views {
             viewContainer.addSubview(v)
