@@ -10,21 +10,21 @@ import UIKit
 
 class ContactsVC: UIViewController {
 
+    
+    
+    @IBOutlet weak var address: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+       
+        let addressTap = UITapGestureRecognizer(target: self, action: #selector(self.addressTapped(_:)))
+        self.address.isUserInteractionEnabled = true
+        self.address.addGestureRecognizer(addressTap)
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+   @objc func addressTapped(_ sender: UITapGestureRecognizer) {
+    UIApplication.shared.open(URL(string: "http://maps.apple.com/?address=Lvivska+Square,+14+Kyiv,+Ukraine")!)
+   }
 
 }

@@ -156,13 +156,79 @@
                     <view key="view" contentMode="scaleToFill" id="DdS-c2-dV5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="c0F-Ch-Jkg">
+                                <rect key="frame" x="83" y="92" width="249" height="182"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="249" id="Qak-U7-ZKZ"/>
+                                    <constraint firstAttribute="height" constant="182" id="SWx-ln-iR8"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="center" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D46-b7-86m">
+                                <rect key="frame" x="83" y="324" width="249" height="178"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="249" id="Dv9-58-l4d"/>
+                                    <constraint firstAttribute="height" constant="178" id="ZcE-uu-aoo"/>
+                                </constraints>
+                                <string key="text">Creative Kids Space is the best place for your children to explore, create, innovate, share and exchange. It is a unique format of interactive lessons about coding, physics, cooking, literature and so much more. </string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKZ-z6-u0N">
+                                <rect key="frame" x="146" y="596" width="142" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="142" id="cvY-8F-3qf"/>
+                                    <constraint firstAttribute="height" constant="21" id="uVN-0S-zBK"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Lvivska Square, 14">
+                                        <attributes>
+                                            <color key="NSColor" red="0.90980392160000001" green="0.4039215686" blue="0.4549019608" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We are located in the heart of Kyiv" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYI-3R-p48">
+                                <rect key="frame" x="73" y="549" width="269" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="hTZ-0f-v3m"/>
+                                    <constraint firstAttribute="width" constant="269" id="hkw-J8-4XM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8Xr-g5-kY0" firstAttribute="trailing" secondItem="mYI-3R-p48" secondAttribute="trailing" constant="72" id="AJE-3s-1zX"/>
+                            <constraint firstItem="8Xr-g5-kY0" firstAttribute="trailing" secondItem="VKZ-z6-u0N" secondAttribute="trailing" constant="126" id="CrS-af-vRZ"/>
+                            <constraint firstItem="mYI-3R-p48" firstAttribute="top" secondItem="D46-b7-86m" secondAttribute="bottom" constant="47" id="GPd-LU-4Dz"/>
+                            <constraint firstItem="VKZ-z6-u0N" firstAttribute="leading" secondItem="8Xr-g5-kY0" secondAttribute="leading" constant="146" id="NbG-H9-JRv"/>
+                            <constraint firstItem="8Xr-g5-kY0" firstAttribute="trailing" secondItem="c0F-Ch-Jkg" secondAttribute="trailing" constant="82" id="Ncm-UC-PlR"/>
+                            <constraint firstItem="8Xr-g5-kY0" firstAttribute="trailing" secondItem="D46-b7-86m" secondAttribute="trailing" constant="82" id="RZ1-c3-baa"/>
+                            <constraint firstItem="c0F-Ch-Jkg" firstAttribute="top" secondItem="8Xr-g5-kY0" secondAttribute="top" constant="48" id="SL4-cH-L0u"/>
+                            <constraint firstItem="8Xr-g5-kY0" firstAttribute="bottom" secondItem="VKZ-z6-u0N" secondAttribute="bottom" constant="245" id="fdt-4s-Ruw"/>
+                            <constraint firstItem="c0F-Ch-Jkg" firstAttribute="leading" secondItem="8Xr-g5-kY0" secondAttribute="leading" constant="83" id="mZ9-p8-ffQ"/>
+                            <constraint firstItem="D46-b7-86m" firstAttribute="leading" secondItem="8Xr-g5-kY0" secondAttribute="leading" constant="83" id="nC6-iA-Dxj"/>
+                            <constraint firstItem="D46-b7-86m" firstAttribute="top" secondItem="c0F-Ch-Jkg" secondAttribute="bottom" constant="50" id="pr6-Ny-GaQ"/>
+                            <constraint firstItem="mYI-3R-p48" firstAttribute="leading" secondItem="8Xr-g5-kY0" secondAttribute="leading" constant="73" id="t2W-tI-hgl"/>
+                            <constraint firstItem="VKZ-z6-u0N" firstAttribute="top" secondItem="mYI-3R-p48" secondAttribute="bottom" constant="26" id="xeV-hA-Cbb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="8Xr-g5-kY0"/>
                     </view>
+                    <connections>
+                        <outlet property="address" destination="VKZ-z6-u0N" id="5cx-RD-stc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H1A-yT-fcO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-25" y="-620"/>
+            <point key="canvasLocation" x="-26.086956521739133" y="-620.08928571428567"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Fnk-kW-rkg">
@@ -183,4 +249,7 @@
             <point key="canvasLocation" x="131.8840579710145" y="128.57142857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo" width="357" height="427"/>
+    </resources>
 </document>
