@@ -176,6 +176,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We are located in the heart of Kyiv" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYI-3R-p48">
+                                <rect key="frame" x="73" y="549" width="269" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="hTZ-0f-v3m"/>
+                                    <constraint firstAttribute="width" constant="269" id="hkw-J8-4XM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKZ-z6-u0N">
                                 <rect key="frame" x="146" y="596" width="142" height="21"/>
                                 <constraints>
@@ -193,37 +203,85 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We are located in the heart of Kyiv" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYI-3R-p48">
-                                <rect key="frame" x="73" y="549" width="269" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDe-m9-GSb">
+                                <rect key="frame" x="203" y="686" width="29" height="20.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="hTZ-0f-v3m"/>
-                                    <constraint firstAttribute="width" constant="269" id="hkw-J8-4XM"/>
+                                    <constraint firstAttribute="height" constant="20.5" id="NcS-fc-1UJ"/>
+                                    <constraint firstAttribute="width" constant="29" id="gUd-5l-DMA"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Uzm-BD-fYE">
+                                <rect key="frame" x="110" y="725.5" width="215.5" height="102.5"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="+380960000000" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txB-6x-JWQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="215.5" height="33"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hm6-e9-xFG">
+                                        <rect key="frame" x="0.0" y="34" width="215.5" height="50.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="creativekids.com.ua">
+                                                <attributes>
+                                                    <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <font key="NSFont" metaFont="menu" size="14"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    <integer key="NSUnderline" value="1"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monday - Sunday 9am-9pm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JG9-0c-Oow">
+                                        <rect key="frame" x="0.0" y="85.5" width="215.5" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="102.5" id="MFX-Re-VS6"/>
+                                    <constraint firstAttribute="width" constant="215.5" id="vGf-3k-PhM"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="ZDe-m9-GSb" firstAttribute="top" secondItem="VKZ-z6-u0N" secondAttribute="bottom" constant="69" id="2Vl-tX-KUM"/>
                             <constraint firstItem="8Xr-g5-kY0" firstAttribute="trailing" secondItem="mYI-3R-p48" secondAttribute="trailing" constant="72" id="AJE-3s-1zX"/>
+                            <constraint firstItem="8Xr-g5-kY0" firstAttribute="bottom" secondItem="Uzm-BD-fYE" secondAttribute="bottom" constant="34" id="ArL-5p-9nU"/>
+                            <constraint firstItem="Uzm-BD-fYE" firstAttribute="top" secondItem="ZDe-m9-GSb" secondAttribute="bottom" constant="19" id="BWN-wJ-VXF"/>
                             <constraint firstItem="8Xr-g5-kY0" firstAttribute="trailing" secondItem="VKZ-z6-u0N" secondAttribute="trailing" constant="126" id="CrS-af-vRZ"/>
                             <constraint firstItem="mYI-3R-p48" firstAttribute="top" secondItem="D46-b7-86m" secondAttribute="bottom" constant="47" id="GPd-LU-4Dz"/>
+                            <constraint firstItem="8Xr-g5-kY0" firstAttribute="trailing" secondItem="ZDe-m9-GSb" secondAttribute="trailing" constant="182" id="Hwo-TL-AnY"/>
                             <constraint firstItem="VKZ-z6-u0N" firstAttribute="leading" secondItem="8Xr-g5-kY0" secondAttribute="leading" constant="146" id="NbG-H9-JRv"/>
                             <constraint firstItem="8Xr-g5-kY0" firstAttribute="trailing" secondItem="c0F-Ch-Jkg" secondAttribute="trailing" constant="82" id="Ncm-UC-PlR"/>
                             <constraint firstItem="8Xr-g5-kY0" firstAttribute="trailing" secondItem="D46-b7-86m" secondAttribute="trailing" constant="82" id="RZ1-c3-baa"/>
                             <constraint firstItem="c0F-Ch-Jkg" firstAttribute="top" secondItem="8Xr-g5-kY0" secondAttribute="top" constant="48" id="SL4-cH-L0u"/>
+                            <constraint firstItem="ZDe-m9-GSb" firstAttribute="leading" secondItem="8Xr-g5-kY0" secondAttribute="leading" constant="203" id="c5y-cc-JVu"/>
                             <constraint firstItem="8Xr-g5-kY0" firstAttribute="bottom" secondItem="VKZ-z6-u0N" secondAttribute="bottom" constant="245" id="fdt-4s-Ruw"/>
+                            <constraint firstItem="8Xr-g5-kY0" firstAttribute="trailing" secondItem="Uzm-BD-fYE" secondAttribute="trailing" constant="88.5" id="iSg-dn-xwJ"/>
                             <constraint firstItem="c0F-Ch-Jkg" firstAttribute="leading" secondItem="8Xr-g5-kY0" secondAttribute="leading" constant="83" id="mZ9-p8-ffQ"/>
                             <constraint firstItem="D46-b7-86m" firstAttribute="leading" secondItem="8Xr-g5-kY0" secondAttribute="leading" constant="83" id="nC6-iA-Dxj"/>
                             <constraint firstItem="D46-b7-86m" firstAttribute="top" secondItem="c0F-Ch-Jkg" secondAttribute="bottom" constant="50" id="pr6-Ny-GaQ"/>
                             <constraint firstItem="mYI-3R-p48" firstAttribute="leading" secondItem="8Xr-g5-kY0" secondAttribute="leading" constant="73" id="t2W-tI-hgl"/>
+                            <constraint firstItem="Uzm-BD-fYE" firstAttribute="leading" secondItem="8Xr-g5-kY0" secondAttribute="leading" constant="110" id="u6h-Kn-izE"/>
                             <constraint firstItem="VKZ-z6-u0N" firstAttribute="top" secondItem="mYI-3R-p48" secondAttribute="bottom" constant="26" id="xeV-hA-Cbb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8Xr-g5-kY0"/>
                     </view>
                     <connections>
                         <outlet property="address" destination="VKZ-z6-u0N" id="5cx-RD-stc"/>
+                        <outlet property="phoneNumber" destination="txB-6x-JWQ" id="OZ3-xb-GBF"/>
+                        <outlet property="website" destination="hm6-e9-xFG" id="Wt5-G0-4oD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H1A-yT-fcO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

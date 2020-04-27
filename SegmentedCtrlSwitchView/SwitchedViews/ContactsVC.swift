@@ -14,12 +14,24 @@ class ContactsVC: UIViewController {
     
     @IBOutlet weak var address: UILabel!
     
+    @IBOutlet weak var phoneNumber: UITextView!
+    
+    @IBOutlet weak var website: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
        
         let addressTap = UITapGestureRecognizer(target: self, action: #selector(self.addressTapped(_:)))
         self.address.isUserInteractionEnabled = true
         self.address.addGestureRecognizer(addressTap)
+        
+        let phoneNumberTap = UITapGestureRecognizer(target: self, action: #selector(self.phoneNumberTapped(_:)))
+        self.phoneNumber.isUserInteractionEnabled = true
+        self.phoneNumber.addGestureRecognizer(phoneNumberTap)
+        
+        let websiteTap = UITapGestureRecognizer(target: self, action: #selector(self.websiteTapped(_:)))
+               self.website.isUserInteractionEnabled = true
+               self.website.addGestureRecognizer(websiteTap)
     }
     
 
@@ -27,4 +39,11 @@ class ContactsVC: UIViewController {
     UIApplication.shared.open(URL(string: "http://maps.apple.com/?address=Lvivska+Square,+14+Kyiv,+Ukraine")!)
    }
 
+    @objc func websiteTapped(_ sender: UITapGestureRecognizer) {
+       UIApplication.shared.open(URL(string: "https://creativekids.com.ua")!)
+      }
+    
+    @objc func phoneNumberTapped(_ sender: UITapGestureRecognizer) {
+          UIApplication.shared.open(URL(string: "tel://+380960000000")!)
+         }
 }
