@@ -14,12 +14,14 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var container: UIView!
     
-    var viewNames:  [String] = ["SimpleVC1", "GalleryVC", "SimpleVC3"]
+    var viewNames:  [String] = ["ContactsVC", "ActivitiesVC", "GalleryVC"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        add(storyboardName: viewNames[2])
         add(storyboardName: viewNames[1])
+        add(storyboardName: viewNames[0])
     }
     
     @IBAction func switchViewAction(_ sender: UISegmentedControl) {
