@@ -29,9 +29,9 @@
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Hj7-dr-xZM">
                                 <rect key="frame" x="51" y="108" width="312" height="32"/>
                                 <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
-                                    <segment title="Third"/>
+                                    <segment title="Contacts"/>
+                                    <segment title="Activities"/>
+                                    <segment title="Gallery"/>
                                 </segments>
                                 <connections>
                                     <action selector="switchViewAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="1VZ-uZ-Htj"/>
@@ -70,7 +70,31 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YXE-3r-hP6" customClass="iCarousel">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="KTf-86-drH">
+                                        <rect key="frame" x="156" y="780" width="103" height="49"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creative Kids" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPI-Sc-nLS">
+                                                <rect key="frame" x="0.0" y="0.0" width="103" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photo Gallery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vUN-vU-QIi">
+                                                <rect key="frame" x="0.0" y="28.5" width="103" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="KTf-86-drH" firstAttribute="leading" secondItem="YXE-3r-hP6" secondAttribute="leading" constant="156" id="iN2-kq-piV"/>
+                                    <constraint firstAttribute="bottom" secondItem="KTf-86-drH" secondAttribute="bottom" constant="67" id="j9N-3y-ora"/>
+                                    <constraint firstAttribute="trailing" secondItem="KTf-86-drH" secondAttribute="trailing" constant="155" id="uSR-My-9TS"/>
+                                </constraints>
                                 <connections>
                                     <outlet property="dataSource" destination="02J-Hq-40Z" id="Jdv-gx-Obq"/>
                                     <outlet property="delegate" destination="02J-Hq-40Z" id="kzW-Cw-tVI"/>

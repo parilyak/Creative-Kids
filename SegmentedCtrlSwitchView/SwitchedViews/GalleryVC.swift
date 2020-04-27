@@ -22,7 +22,7 @@ class GalleryVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        iCarouselView.type = .timeMachine
+        iCarouselView.type = .rotary
         iCarouselView.contentMode = .scaleAspectFill
         iCarouselView.isPagingEnabled = true
     }
