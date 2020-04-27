@@ -10,6 +10,8 @@
 		3605FF802456A8810054BEAC /* GalleryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3605FF7F2456A8810054BEAC /* GalleryVC.swift */; };
 		3605FFA42456BA9F0054BEAC /* ContactsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3605FFA32456BA9F0054BEAC /* ContactsVC.swift */; };
 		3605FFA62456BAB10054BEAC /* ActivitiesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3605FFA52456BAB10054BEAC /* ActivitiesVC.swift */; };
+		3605FFA92456BE2B0054BEAC /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3605FFA72456BE2B0054BEAC /* CustomCell.swift */; };
+		3605FFAA2456BE2B0054BEAC /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3605FFA82456BE2B0054BEAC /* CustomCell.xib */; };
 		362EB7C42455E0C10067F0AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362EB7C32455E0C10067F0AB /* AppDelegate.swift */; };
 		362EB7C62455E0C10067F0AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362EB7C52455E0C10067F0AB /* SceneDelegate.swift */; };
 		362EB7C82455E0C10067F0AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362EB7C72455E0C10067F0AB /* ViewController.swift */; };
@@ -47,7 +49,9 @@
 		3605FF7F2456A8810054BEAC /* GalleryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryVC.swift; sourceTree = "<group>"; };
 		3605FFA32456BA9F0054BEAC /* ContactsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsVC.swift; sourceTree = "<group>"; };
 		3605FFA52456BAB10054BEAC /* ActivitiesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesVC.swift; sourceTree = "<group>"; };
-		362EB7C02455E0C10067F0AB /* SegmentedCtrlSwitchView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SegmentedCtrlSwitchView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3605FFA72456BE2B0054BEAC /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		3605FFA82456BE2B0054BEAC /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		362EB7C02455E0C10067F0AB /* Creative Kids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Creative Kids.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		362EB7C32455E0C10067F0AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		362EB7C52455E0C10067F0AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		362EB7C72455E0C10067F0AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +106,8 @@
 				3605FF7F2456A8810054BEAC /* GalleryVC.swift */,
 				3605FFA32456BA9F0054BEAC /* ContactsVC.swift */,
 				3605FFA52456BAB10054BEAC /* ActivitiesVC.swift */,
+				3605FFA72456BE2B0054BEAC /* CustomCell.swift */,
+				3605FFA82456BE2B0054BEAC /* CustomCell.xib */,
 			);
 			path = SwitchedViews;
 			sourceTree = "<group>";
@@ -119,7 +125,7 @@
 		362EB7C12455E0C10067F0AB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				362EB7C02455E0C10067F0AB /* SegmentedCtrlSwitchView.app */,
+				362EB7C02455E0C10067F0AB /* Creative Kids.app */,
 				362EB7D62455E0C30067F0AB /* SegmentedCtrlSwitchViewTests.xctest */,
 				362EB7E12455E0C30067F0AB /* SegmentedCtrlSwitchViewUITests.xctest */,
 			);
@@ -192,7 +198,7 @@
 			);
 			name = SegmentedCtrlSwitchView;
 			productName = SegmentedCtrlSwitchView;
-			productReference = 362EB7C02455E0C10067F0AB /* SegmentedCtrlSwitchView.app */;
+			productReference = 362EB7C02455E0C10067F0AB /* Creative Kids.app */;
 			productType = "com.apple.product-type.application";
 		};
 		362EB7D52455E0C30067F0AB /* SegmentedCtrlSwitchViewTests */ = {
@@ -280,6 +286,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3605FFAA2456BE2B0054BEAC /* CustomCell.xib in Resources */,
 				362EB7D02455E0C30067F0AB /* LaunchScreen.storyboard in Resources */,
 				362EB7CD2455E0C30067F0AB /* Assets.xcassets in Resources */,
 				362EB80B2455F4490067F0AB /* SimpleVC3.xib in Resources */,
@@ -311,6 +318,7 @@
 			files = (
 				362EB7C82455E0C10067F0AB /* ViewController.swift in Sources */,
 				362EB7C42455E0C10067F0AB /* AppDelegate.swift in Sources */,
+				3605FFA92456BE2B0054BEAC /* CustomCell.swift in Sources */,
 				3605FFA42456BA9F0054BEAC /* ContactsVC.swift in Sources */,
 				362EB7FA2455E2750067F0AB /* SimpleVC2.swift in Sources */,
 				3605FF802456A8810054BEAC /* GalleryVC.swift in Sources */,
@@ -500,7 +508,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Lilya.SegmentedCtrlSwitchView;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Creative Kids";
 				SWIFT_OBJC_BRIDGING_HEADER = "SegmentedCtrlSwitchView/SimpleVC/SegmentedCtrlSwitchView-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -521,7 +529,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Lilya.SegmentedCtrlSwitchView;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Creative Kids";
 				SWIFT_OBJC_BRIDGING_HEADER = "SegmentedCtrlSwitchView/SimpleVC/SegmentedCtrlSwitchView-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

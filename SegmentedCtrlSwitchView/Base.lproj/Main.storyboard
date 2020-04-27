@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--SegCtrlSwitchView-->
+        <!--Creative Kids Space-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SegmentedCtrlSwitchView" customModuleProvider="target" sceneMemberID="viewController">
@@ -50,7 +50,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="SegCtrlSwitchView" id="ywr-5w-Yn2"/>
+                    <navigationItem key="navigationItem" title="Creative Kids Space" id="ywr-5w-Yn2"/>
                     <connections>
                         <outlet property="container" destination="Fto-v2-7gS" id="2DE-Dh-IVf"/>
                         <outlet property="viewContainer" destination="p3C-0m-S3y" id="xcd-2R-Jdp"/>
