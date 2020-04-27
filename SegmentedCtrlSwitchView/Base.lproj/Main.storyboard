@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SU6-G0-1pU">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,6 +18,12 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p3C-0m-S3y">
                                 <rect key="frame" x="0.0" y="159" width="414" height="737"/>
+                                <subviews>
+                                    <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fto-v2-7gS">
+                                        <rect key="frame" x="0.0" y="-11" width="414" height="748"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                    </containerView>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Hj7-dr-xZM">
@@ -45,12 +52,47 @@
                     </view>
                     <navigationItem key="navigationItem" title="SegCtrlSwitchView" id="ywr-5w-Yn2"/>
                     <connections>
+                        <outlet property="container" destination="Fto-v2-7gS" id="2DE-Dh-IVf"/>
                         <outlet property="viewContainer" destination="p3C-0m-S3y" id="xcd-2R-Jdp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="128.57142857142856"/>
+        </scene>
+        <!--GalleryVC-->
+        <scene sceneID="mNm-Kk-ava">
+            <objects>
+                <viewController storyboardIdentifier="GalleryVC" id="02J-Hq-40Z" customClass="GalleryVC" customModule="SegmentedCtrlSwitchView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aBE-0p-wTl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YXE-3r-hP6" customClass="iCarousel">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="02J-Hq-40Z" id="Jdv-gx-Obq"/>
+                                    <outlet property="delegate" destination="02J-Hq-40Z" id="kzW-Cw-tVI"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="YXE-3r-hP6" secondAttribute="bottom" id="4Y9-d2-hvS"/>
+                            <constraint firstItem="YXE-3r-hP6" firstAttribute="top" secondItem="aBE-0p-wTl" secondAttribute="top" id="7B8-PC-J6W"/>
+                            <constraint firstItem="YXE-3r-hP6" firstAttribute="leading" secondItem="aBE-0p-wTl" secondAttribute="leading" id="cUG-zC-MHf"/>
+                            <constraint firstItem="YXE-3r-hP6" firstAttribute="trailing" secondItem="Oo5-FR-mx6" secondAttribute="trailing" id="xeM-OH-Uld"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Oo5-FR-mx6"/>
+                    </view>
+                    <connections>
+                        <outlet property="iCarouselView" destination="YXE-3r-hP6" id="zj5-4q-IhM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3yJ-W7-l0o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="375.36231884057975" y="-627.45535714285711"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Fnk-kW-rkg">

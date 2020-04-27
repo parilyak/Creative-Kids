@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3605FF802456A8810054BEAC /* GalleryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3605FF7F2456A8810054BEAC /* GalleryVC.swift */; };
 		362EB7C42455E0C10067F0AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362EB7C32455E0C10067F0AB /* AppDelegate.swift */; };
 		362EB7C62455E0C10067F0AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362EB7C52455E0C10067F0AB /* SceneDelegate.swift */; };
 		362EB7C82455E0C10067F0AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362EB7C72455E0C10067F0AB /* ViewController.swift */; };
@@ -18,7 +19,6 @@
 		362EB7F62455E25F0067F0AB /* SimpleVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362EB7F42455E25F0067F0AB /* SimpleVC1.swift */; };
 		362EB7F72455E25F0067F0AB /* SimpleVC1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 362EB7F52455E25F0067F0AB /* SimpleVC1.xib */; };
 		362EB7FA2455E2750067F0AB /* SimpleVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362EB7F82455E2750067F0AB /* SimpleVC2.swift */; };
-		362EB7FB2455E2750067F0AB /* SimpleVC2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 362EB7F92455E2750067F0AB /* SimpleVC2.xib */; };
 		362EB8032455ECB40067F0AB /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 362EB8012455ECB30067F0AB /* iCarousel.m */; };
 		362EB80A2455F4490067F0AB /* SimpleVC3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362EB8082455F4490067F0AB /* SimpleVC3.swift */; };
 		362EB80B2455F4490067F0AB /* SimpleVC3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 362EB8092455F4490067F0AB /* SimpleVC3.xib */; };
@@ -42,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3605FF7F2456A8810054BEAC /* GalleryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryVC.swift; sourceTree = "<group>"; };
 		362EB7C02455E0C10067F0AB /* SegmentedCtrlSwitchView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SegmentedCtrlSwitchView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		362EB7C32455E0C10067F0AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		362EB7C52455E0C10067F0AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,7 +60,6 @@
 		362EB7F42455E25F0067F0AB /* SimpleVC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleVC1.swift; sourceTree = "<group>"; };
 		362EB7F52455E25F0067F0AB /* SimpleVC1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleVC1.xib; sourceTree = "<group>"; };
 		362EB7F82455E2750067F0AB /* SimpleVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleVC2.swift; sourceTree = "<group>"; };
-		362EB7F92455E2750067F0AB /* SimpleVC2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleVC2.xib; sourceTree = "<group>"; };
 		362EB8002455ECB30067F0AB /* SegmentedCtrlSwitchView-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SegmentedCtrlSwitchView-Bridging-Header.h"; sourceTree = "<group>"; };
 		362EB8012455ECB30067F0AB /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
 		362EB8022455ECB40067F0AB /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
@@ -92,6 +92,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3605FF812456A8860054BEAC /* SwitchedViews */ = {
+			isa = PBXGroup;
+			children = (
+				3605FF7F2456A8810054BEAC /* GalleryVC.swift */,
+			);
+			path = SwitchedViews;
+			sourceTree = "<group>";
+		};
 		362EB7B72455E0C10067F0AB = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +123,7 @@
 		362EB7C22455E0C10067F0AB /* SegmentedCtrlSwitchView */ = {
 			isa = PBXGroup;
 			children = (
+				3605FF812456A8860054BEAC /* SwitchedViews */,
 				362EB7F32455E2280067F0AB /* SimpleVC */,
 				362EB7C32455E0C10067F0AB /* AppDelegate.swift */,
 				362EB7C52455E0C10067F0AB /* SceneDelegate.swift */,
@@ -153,7 +162,6 @@
 				362EB7F42455E25F0067F0AB /* SimpleVC1.swift */,
 				362EB7F52455E25F0067F0AB /* SimpleVC1.xib */,
 				362EB7F82455E2750067F0AB /* SimpleVC2.swift */,
-				362EB7F92455E2750067F0AB /* SimpleVC2.xib */,
 				362EB8082455F4490067F0AB /* SimpleVC3.swift */,
 				362EB8092455F4490067F0AB /* SimpleVC3.xib */,
 				362EB8002455ECB30067F0AB /* SegmentedCtrlSwitchView-Bridging-Header.h */,
@@ -269,7 +277,6 @@
 				362EB7D02455E0C30067F0AB /* LaunchScreen.storyboard in Resources */,
 				362EB7CD2455E0C30067F0AB /* Assets.xcassets in Resources */,
 				362EB80B2455F4490067F0AB /* SimpleVC3.xib in Resources */,
-				362EB7FB2455E2750067F0AB /* SimpleVC2.xib in Resources */,
 				362EB7F72455E25F0067F0AB /* SimpleVC1.xib in Resources */,
 				362EB7CB2455E0C10067F0AB /* Main.storyboard in Resources */,
 			);
@@ -299,6 +306,7 @@
 				362EB7C82455E0C10067F0AB /* ViewController.swift in Sources */,
 				362EB7C42455E0C10067F0AB /* AppDelegate.swift in Sources */,
 				362EB7FA2455E2750067F0AB /* SimpleVC2.swift in Sources */,
+				3605FF802456A8810054BEAC /* GalleryVC.swift in Sources */,
 				362EB7F62455E25F0067F0AB /* SimpleVC1.swift in Sources */,
 				362EB8032455ECB40067F0AB /* iCarousel.m in Sources */,
 				362EB80A2455F4490067F0AB /* SimpleVC3.swift in Sources */,
