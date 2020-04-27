@@ -141,6 +141,9 @@
                             <outlet property="delegate" destination="xuE-fK-vK4" id="RXb-MX-9JA"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="activitiesTableView" destination="Pqt-Nc-GpB" id="hwP-CJ-wYy"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="poN-fk-t3n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
